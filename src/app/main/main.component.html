@@ -1,0 +1,18 @@
+<div class="main">
+        <div class="main_news">
+            <p>Новости</p>
+            <div class="main_news__content">
+                <div *ngFor="let n of news">
+                <app-news-item [news]="n" [status]="'default'"></app-news-item>
+                </div>
+            </div>
+        </div>
+        <div class="main_latest">
+            <p>Последние новости</p>
+            <div class="main_latest__content">
+                <div *ngFor="let l of latestNews">
+                    <app-news-item [news]="l" [status]="'latest'"></app-news-item>
+                </div>
+            </div>
+        </div>
+</div>

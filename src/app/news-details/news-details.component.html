@@ -1,0 +1,14 @@
+<div class="details">
+    <div class="details_header">
+        <div class="details_title">
+            {{news.title}}
+        </div>
+        <div class="details_title__category"><div>#{{news.category}}</div></div>
+    </div>
+    <div class="details_image"><img src="{{news.image}}"></div>
+    <div class="details_text">
+        <div *ngFor="let t of text">
+            <div class="details_text__item">{{t}}</div>
+        </div>
+    </div>
+</div>

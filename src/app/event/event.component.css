@@ -1,0 +1,28 @@
+.event {
+    display: grid;
+    grid-gap: 1rem;
+}
+.event_item {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-gap: 1rem;
+    padding: 1rem;
+    background: #A5EDD3;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+.event_item img {
+    height: 150px;
+    display: grid;
+    justify-self: center;
+}
+.event_item p {
+    margin: 0;
+    font-size: 14px;
+    display: grid;
+    justify-self: center;
+}
+.second {
+    background: #B7EDA5;
+}

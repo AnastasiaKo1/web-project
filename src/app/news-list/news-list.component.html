@@ -1,0 +1,6 @@
+<div class="news-list">
+    <div class="news-list_title">По тематике {{categoryName}} кол-во статей: {{categoryAmount}}</div>
+    <div *ngFor="let n of newsList">
+        <app-news-item [news]="n" [status]="'list'"></app-news-item>
+    </div>
+</div>

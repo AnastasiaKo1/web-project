@@ -1,0 +1,126 @@
+.item{
+    display: grid;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.2s;
+}
+.item img:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.item_category {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    position: absolute;
+    background: #FF0085;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 1rem;
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+    line-height: 14px;
+}
+.item_text {
+    position: relative;
+    display: grid;
+    align-self: flex-end;
+    width: 100%;
+}
+.item_title {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.822);
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: grid;
+    margin: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    align-self: flex-end;
+}
+.latest {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 10px;
+    cursor: pointer;
+}
+.latest:hover {
+    background: rgb(252, 252, 252);
+}
+.item_category__latest {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.item_category__latest div{
+    background: #FF0085;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 1rem;
+    border-radius: 50px;
+    line-height: 14px;
+}
+.item_title__latest {
+    position: relative;
+    font-size: 14px;
+    color: rgb(107, 107, 107);
+}
+.list {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.list_img {
+    height: 110px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.list img {
+    width: 210px;
+}
+.list_text {
+    padding: 1rem;
+}
+.list_text__title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    font-size: 16px;
+    font-weight: bold;
+    grid-gap: 5px;
+}
+.list_text__category {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.list_text__category div {
+    background: #FF0085;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 1rem;
+    border-radius: 50px;
+    line-height: 14px;   
+}
+.list_text__desc {
+    font-size: 14px;
+    padding-right: 5rem;
+    color: rgb(102, 102, 102);
+}

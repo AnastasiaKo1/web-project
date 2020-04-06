@@ -1,0 +1,6 @@
+<div class="category-list">
+    <div class="category-list_item" routerLink="main" routerLinkActive="active">#все</div>
+    <div *ngFor="let c of categories">
+        <div class="category-list_item" routerLink="category/{{c.path}}" routerLinkActive="active">#{{c.name}}</div>
+    </div>
+</div>

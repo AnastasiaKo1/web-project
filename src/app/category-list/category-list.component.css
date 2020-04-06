@@ -1,0 +1,21 @@
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(7, auto) 1fr;
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.category-list_item {
+    font-size: 14px;
+    font-weight: bold;
+    color: #9F9F9F;
+    padding: 5px 1rem;
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50px;
+    line-height: 14px;
+}
+.active {
+    background: #FF0085;
+    color: #fff;
+}

@@ -1,0 +1,37 @@
+<div *ngIf="status == 'default'">
+    <div class="item" (click)="changeDirection(news.id)">
+        <img src="{{news.image}}">
+        <div class="item_category">#{{news.category}}</div>
+        <div class="item_text">
+            <div class="item_title">{{news.title}}</div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="status == 'latest'">
+    <div class="latest" (click)="changeDirection(news.id)">
+        <div class="item_category__latest">
+            <div>#{{news.category}}</div>
+        </div>
+        <div class="item_title__latest">{{news.title}}</div>
+    </div>
+</div>
+
+<div *ngIf="status == 'list'">
+    <div class="list" (click)="changeDirection(news.id)">
+        <div class="list_img">
+            <img src="{{news.image}}">
+        </div>
+
+        <div class="list_text">
+            <div class="list_text__title">
+                {{news.title}}
+                <div class="list_text__category">
+                    <div>#{{news.category}}</div>
+                </div>
+            </div>
+            <div class="list_text__desc">{{desc}}...</div>
+        </div>
+    </div>
+</div>
