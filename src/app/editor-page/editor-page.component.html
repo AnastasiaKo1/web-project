@@ -3,28 +3,28 @@
         <div class="title">Add new news article</div>
         <div class="form_item">
             <div class="form_item__text">Title</div>
-            <input type="text">
+            <input type="text" name="title" [(ngModel)]="newsInfo.title">
         </div>
         <div class="form_item">
             <div class="form_item__text">Category</div>
-            <input type="text">
+            <input type="text" name="category" [(ngModel)]="newsInfo.category">
         </div>
         <div class="form_item">
             <div class="form_item__text">Image</div>
-            <input type="file">
+            <input type="file" name="image" [(ngModel)]="newsInfo.image">
         </div>
         <div class="form_item">
             <div class="form_item__text">Paragraph1</div>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea cols="30" rows="10" name="text" [(ngModel)]="newsInfo.text[0]"></textarea>
         </div>
         <div class="form_item">
             <div class="form_item__text">Paragraph2</div>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea cols="30" rows="10" name="text" [(ngModel)]="newsInfo.text[1]"></textarea>
         </div>
         <div class="form_item">
             <div class="form_item__text">Paragraph3</div>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea cols="30" rows="10" name="text" [(ngModel)]="newsInfo.text[2]"></textarea>
         </div>
-        <button>Ready!</button>
+        <button (click)="onCreate()">Ready!</button>
     </form>
 </div>

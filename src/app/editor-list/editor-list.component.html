@@ -1,0 +1,6 @@
+<div *ngFor="let article of newsList">
+    <div>
+        <div>{{article.title}}</div>
+        <button (click)="onDelete(article.id)">X</button>
+    </div>
+</div>

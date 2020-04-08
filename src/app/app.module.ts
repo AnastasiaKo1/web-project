@@ -12,6 +12,9 @@ import { NewsItemComponent } from './news-item/news-item.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
 import { LoginComponent } from './login/login.component';
 import { EditorPageComponent } from './editor-page/editor-page.component'
+import { FormsModule } from '@angular/forms';
+import { EditorListComponent } from './editor-list/editor-list.component'
+
 
 @NgModule({
   declarations: [
@@ -23,12 +26,14 @@ import { EditorPageComponent } from './editor-page/editor-page.component'
     NewsItemComponent,
     NewsDetailsComponent,
     LoginComponent,
-    EditorPageComponent
+    EditorPageComponent,
+    EditorListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,13 +5,13 @@
             </div>
             <div class="form_item">
                 <div class="form_item__text">Email</div>
-                <input type="text">
+                <input type="text" name="email" [(ngModel)]="userInfo.email">
             </div>
             <div class="form_item">
                 <div class="form_item__text">Password</div>
-                <input type="password">
+                <input type="password" name="password" [(ngModel)]="userInfo.password">
             </div>
-            <button>Login</button>
+            <button (click)="onSubmit()">Login</button>
         </form>
     </div>
 
@@ -21,17 +21,17 @@
             </div>
             <div class="form_item">
                 <div class="form_item__text">Email</div>
-                <input type="text">
+                <input type="text" name="email" [(ngModel)]="userInfo.email">
             </div>
             <div class="form_item">
                 <div class="form_item__text">Password</div>
-                <input type="password">
+                <input type="password" name="password" [(ngModel)]="userInfo.password">
             </div>
             <div class="form_item">
                 <div class="form_item__text">Password Confirmation</div>
-                <input type="password">
+                <input type="password" name="password2" [(ngModel)]="userInfo.password2">
             </div>
-            <button>Singup</button>
+            <button (click)="onSubmit()">Singup</button>
         </form>
     </div>
 </div>

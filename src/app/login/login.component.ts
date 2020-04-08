@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,23 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   @Input() login = true
-  constructor() { }
+  constructor(private userService: UserService) { }
+
+  userInfo = {
+    email:'',
+    password: '',
+    password2: ''
+  }
 
   ngOnInit(): void {
   }
 
+  onSubmit(): void {
+    console.log(this.userInfo)
+    if(this.login == true){
+      this.userService.SignIn(this.userInfo)
+    } else {
+      this.userService.SignUp(this.userInfo)
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NewsService } from '../news.service';
 
 @Component({
   selector: 'app-editor-page',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private newsService: NewsService) { }
+  newsInfo = {
+    id: '',
+    title: '',
+    category: '',
+    image: '',
+    text: []
+  }
 
   ngOnInit(): void {
   }
 
+  onCreate(): void {
+    console.log(this.newsInfo)
+    this.newsService.create(this.newsInfo)
+  }
 }
