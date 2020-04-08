@@ -20,6 +20,7 @@
     font-size: 16px;
     color: #fff;
     line-height: 16px;
+    cursor: pointer;
     font-weight: bold;
 }
 .category {
@@ -47,4 +48,19 @@
     font-weight: bold;
     line-height: 18px;
     padding-bottom: 1rem;
+}
+@media (max-width: 920px) {
+    .content {
+        padding: 0 1rem;
+        grid-template-columns: auto 1fr;
+    }
+    .category {
+        padding: 1rem;
+    }
+    .header {
+        padding: 0 1rem;
+    }
+    .content_event {
+        display: none;
+    }
 }

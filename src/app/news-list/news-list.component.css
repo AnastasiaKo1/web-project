@@ -6,3 +6,8 @@
     color: #828282;
     margin-bottom: 1rem;
 }
+@media (max-width: 920px) {
+    .news-list {
+        padding: 0;
+    }
+}

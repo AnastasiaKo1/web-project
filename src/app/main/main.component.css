@@ -18,3 +18,13 @@
     padding-bottom: 2rem;
     overflow: hidden;
 }
+@media (max-width: 920px) {
+    .main {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .main_news__content {
+        padding: 0;
+    }
+}

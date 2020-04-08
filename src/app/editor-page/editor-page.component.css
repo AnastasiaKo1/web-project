@@ -1,0 +1,25 @@
+.ep {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.form_item__text {
+    color: #868686;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.form_item {
+    display: grid;
+}
+form {
+    display: grid;
+    padding: 3rem;
+    grid-gap: 10px;
+}

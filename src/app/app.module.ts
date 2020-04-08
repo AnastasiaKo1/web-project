@@ -9,7 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsListComponent } from './news-list/news-list.component';
 import { EventComponent } from './event/event.component';
 import { NewsItemComponent } from './news-item/news-item.component';
-import { NewsDetailsComponent } from './news-details/news-details.component'
+import { NewsDetailsComponent } from './news-details/news-details.component';
+import { LoginComponent } from './login/login.component';
+import { EditorPageComponent } from './editor-page/editor-page.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NewsDetailsComponent } from './news-details/news-details.component'
     NewsListComponent,
     EventComponent,
     NewsItemComponent,
-    NewsDetailsComponent
+    NewsDetailsComponent,
+    LoginComponent,
+    EditorPageComponent
   ],
   imports: [
     BrowserModule,

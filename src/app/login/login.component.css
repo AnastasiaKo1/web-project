@@ -1,0 +1,52 @@
+.login-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+}
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+button {
+    margin-top: 1rem;
+    color: #FF0085;
+    background: rgba(255, 0, 132, 0.171);
+    padding: 5px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background: rgba(255, 0, 132, 0.26);
+    transition: 0.2s;
+}
+.form_item__text {
+    color: #868686;
+    font-size: 12px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-gap: 7px;
+}
+p{
+    margin: 0;
+    color: rgba(255, 0, 132, 0.705);
+    cursor: pointer;
+    transition: 0.1s;
+    text-decoration: underline;
+}
+p:hover {
+    color: #FF0085;
+    transition: 0.1s;
+}

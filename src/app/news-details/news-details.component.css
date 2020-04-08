@@ -46,3 +46,16 @@
     line-height: 24px;
     color: #686868;
 }
+@media (max-width: 920px) {
+    .details_header {
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .details {
+        padding: 0;
+    }
+    .details_image {
+        height: 200px;
+    }
+}
